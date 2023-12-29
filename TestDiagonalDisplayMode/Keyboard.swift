@@ -67,7 +67,7 @@ class KeyboardShiftButtonNode: VADisplayNode {
         image: UIImage(named: "ic_shift"),
         size: CGSize(same: 24),
         contentMode: .center,
-        tintColor: { $0.darkText }
+        tintColor: { _ in .black }
     )
 
     init() {
@@ -83,7 +83,7 @@ class KeyboardShiftButtonNode: VADisplayNode {
     }
 
     override func configureTheme(_ theme: VATheme) {
-        backgroundColor = theme.label
+        backgroundColor = .white
     }
 }
 
