@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = VAWindow(standardLightTheme: .vaLight, standardDarkTheme: .vaDark)
-        let controller = UIViewController()
-        controller.view.backgroundColor = .green
         window.rootViewController = ASDKViewController(node: ControllerNode(
             rotationObs: rotationInformationService.rotationObs
                 .distinctUntilChanged({ abs($0 - $1) < EnvironmentConfiguration.rotationAngleDiscretization })
