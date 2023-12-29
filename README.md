@@ -1,0 +1,2 @@
+# ExampleDiagonalDisplayMode
+humor
